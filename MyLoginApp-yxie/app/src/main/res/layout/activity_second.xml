@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".SecondActivity">
+    <!-- 05-20-22 yxie set up title for welcome page-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="34sp" />
+    <!-- 05-20-22 yxie display the users name-->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Yantao Xie"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="34sp" />
+    <!-- 05-20-22 yxie display user's email-->
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="287dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:text="yantao@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="24sp" />
+    <!-- 05-20-22 yxie create a button for log out-->
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Sign out" />
+
+</RelativeLayout>
